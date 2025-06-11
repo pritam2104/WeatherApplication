@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Web App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: url('background.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      backdrop-filter: brightness(0.5); /* Optional: Darkens the background slightly */
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 20px;
+      padding: 5px 15px;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 20px;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-bar button img {
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="weather_icon.png" alt="Weather Icon" class="logo" />
+   
+    <h1>Welcome to the Weather Web Application</h1>
+    <form action="weatherservlete" method="post" class="SearchInput">
+    
+    <div class="search-bar">
+      <input type="text" id="city" name="city" placeholder="Enter City Name....." />
+      <button id="searchButton">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+     
+    </div>
+     </form>
+  </div> 
+  
+ 
+</body>
+</html>
